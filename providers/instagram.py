@@ -143,4 +143,3 @@ def status():
     fails = [r for r in rows if not r.get("ok")]
     for r in fails[-5:]:
         print(f"  כשל: {r['account']} — {r.get('err', '?')}")
-EOF
